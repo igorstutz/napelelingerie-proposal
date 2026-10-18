@@ -491,6 +491,92 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 /* ---- Na Pele: ajustes sobre a base ---- */
+/* ---- Na prática: SEO, AEO e GEO ---- */
+.prat__tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 26px; }
+.prat__tab { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.03); color: #d6cbc8; font-weight: 700; font-size: .88rem; transition: background .2s, color .2s, border-color .2s; }
+.prat__tab svg { width: 17px; height: 17px; }
+.prat__tab small { font-size: .66rem; font-weight: 800; letter-spacing: .1em; padding: 3px 7px; border-radius: 999px; background: rgba(196,18,47,.22); color: var(--red-soft); }
+.prat__tab[aria-selected='true'] { background: #fff; color: var(--ink); border-color: #fff; }
+.prat__tab[aria-selected='true'] small { background: var(--red); color: #fff; }
+.prat__intro { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 40px; margin-bottom: 22px; }
+.prat__q { font-size: 1.05rem; color: #fff; font-weight: 700; display: flex; gap: 10px; align-items: center; }
+.prat__q svg { width: 20px; height: 20px; color: var(--red-soft); flex: none; }
+.prat__why { color: #b3a6a7; font-size: .95rem; margin: 0; }
+.prat__cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
+.prat__col { border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.prat__lbl { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; font-size: .74rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.prat__col--hoje { background: #1a1416; border: 1px solid rgba(255,255,255,.1); }
+.prat__col--hoje .prat__lbl { color: #b3a6a7; border-bottom: 1px solid rgba(255,255,255,.08); }
+.prat__col--hoje .prat__lbl span:last-child { color: var(--red-soft); }
+.prat__col--hoje img { width: 100%; height: 100%; object-fit: cover; object-position: top left; flex: 1; max-height: 440px; }
+.prat__col--novo { background: #202124; border: 2px solid var(--red); box-shadow: 0 20px 50px -20px rgba(196,18,47,.55); }
+.prat__col--novo .prat__lbl { background: var(--red); color: #fff; }
+.prat__col--novo .prat__lbl em { font-style: normal; font-weight: 600; letter-spacing: .04em; text-transform: none; opacity: .85; }
+.prat__how { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.prat__how li { display: flex; gap: 10px; font-size: .9rem; color: #ddd2cf; line-height: 1.45; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 14px; }
+.prat__how li svg { width: 18px; height: 18px; color: var(--red-soft); flex: none; margin-top: 2px; }
+.prat__note { margin-top: 14px; font-size: .78rem; color: #9a8c8e; }
+/* Simulações no estilo do Google (tema escuro) */
+.g { padding: 18px; color: #e8eaed; font-family: Arial, 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 1.5; flex: 1; }
+.g__search { display: flex; align-items: center; gap: 10px; background: #303134; border-radius: 24px; padding: 10px 16px; color: #e8eaed; margin-bottom: 14px; font-size: 14px; }
+.g__search svg { width: 16px; height: 16px; color: #9aa0a6; flex: none; }
+.g__h { font-size: 18px; color: #e8eaed; margin: 4px 0 10px; font-family: Arial, sans-serif; font-weight: 400; letter-spacing: 0; }
+.g__local { display: flex; gap: 12px; padding: 12px; border-radius: 12px; background: #292a2d; border: 1px solid #3c4043; position: relative; }
+.g__local + .g__local { margin-top: 8px; opacity: .55; }
+.g__thumb { width: 72px; height: 72px; border-radius: 10px; flex: none; display: grid; place-items: center; background: #0d0a0b; color: #fff; font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 22px; overflow: hidden; }
+.g__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.g__name { font-size: 16px; color: #e8eaed; }
+.g__stars { color: #fbbc04; letter-spacing: 1px; }
+.g__muted { color: #9aa0a6; font-size: 13px; }
+.g__open { color: #81c995; }
+.g__quote { color: #bdc1c6; font-size: 13px; }
+.g__btns { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.g__btns span { border: 1px solid #5f6368; color: #8ab4f8; border-radius: 16px; padding: 4px 10px; font-size: 12px; }
+.g__pin { position: absolute; right: 12px; top: 12px; font-size: 10px; font-weight: 700; letter-spacing: .06em; color: #fff; background: var(--red); padding: 3px 7px; border-radius: 999px; }
+.g__ai { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #c58af9; margin-bottom: 8px; }
+.g__ai svg { width: 15px; height: 15px; }
+.g__ans h5 { font-size: 15px; margin: 0 0 8px; color: #e8eaed; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 0; }
+.g__ans ul { display: grid; gap: 10px; }
+.g__ans li { padding-left: 14px; position: relative; color: #bdc1c6; }
+.g__ans li::before { content: '•'; position: absolute; left: 0; color: #e8eaed; }
+.g__ans li b { color: #e8eaed; }
+.g__ans li.hl { background: rgba(196,18,47,.14); border: 1px solid rgba(255,90,110,.35); border-radius: 10px; padding: 10px 12px 10px 24px; }
+.g__ans li.hl::before { left: 10px; top: 10px; }
+.g__ans a { color: #8ab4f8; text-decoration: underline; }
+.g__src { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; background: #303134; border-radius: 12px; padding: 3px 9px; font-size: 12px; color: #bdc1c6; }
+.g__src i { width: 14px; height: 14px; border-radius: 50%; background: var(--red); display: inline-block; }
+.g__shop { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.g__card { background: #292a2d; border: 1px solid #3c4043; border-radius: 10px; overflow: hidden; }
+.g__card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.g__card div { padding: 8px; }
+.g__card b { display: block; color: #8ab4f8; font-weight: 400; font-size: 13px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.6em; }
+.g__price { color: #e8eaed; font-weight: 700; margin-top: 4px; }
+.g__price s { color: #9aa0a6; font-weight: 400; font-size: 12px; margin-left: 4px; }
+.g__store { display: flex; align-items: center; gap: 5px; color: #bdc1c6; font-size: 12px; margin-top: 2px; }
+.g__store i { width: 12px; height: 12px; border-radius: 50%; background: var(--red); }
+.g__ship { color: #9aa0a6; font-size: 12px; }
+.g__snip { background: #292a2d; border: 1px solid #3c4043; border-radius: 12px; padding: 16px; }
+.g__snip p { color: #e8eaed; margin: 0 0 10px; font-size: 15px; }
+.g__snip p b { background: rgba(138,180,248,.18); }
+.g__url { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #bdc1c6; }
+.g__url i { width: 22px; height: 22px; border-radius: 50%; background: #0d0a0b; display: grid; place-items: center; color: #fff; font-style: italic; font-family: 'Bodoni Moda', Georgia, serif; font-size: 10px; }
+.g__link { color: #8ab4f8; font-size: 16px; margin: 2px 0 0; }
+.g__paa { margin-top: 12px; border-top: 1px solid #3c4043; }
+.g__paa div { display: flex; justify-content: space-between; padding: 10px 2px; border-bottom: 1px solid #3c4043; color: #e8eaed; font-size: 14px; }
+.g__paa div span:last-child { color: #9aa0a6; }
+.prat__empty { flex: 1; display: grid; place-items: center; padding: 30px; text-align: center; color: #b3a6a7; font-size: .95rem; }
+.prat__empty b { display: block; color: #fff; font-size: 1.1rem; margin-bottom: 6px; }
+@media (max-width: 900px) {
+  .prat__intro, .prat__cmp { grid-template-columns: 1fr; }
+  .prat__how { grid-template-columns: 1fr; }
+  .prat__col--hoje img { max-height: 300px; }
+}
+@media (max-width: 640px) {
+  .prat__tab { padding: 10px 12px; font-size: .8rem; }
+  .g__shop { grid-template-columns: repeat(2, 1fr); }
+  .g__shop .g__card:nth-child(3) { display: none; }
+}
+
 .texture { background-image: radial-gradient(1200px 520px at 85% -10%, rgba(196, 18, 47, .24), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(196, 18, 47, .09), transparent 60%); background-size: auto; }
 .hero h1 { font-size: clamp(2.3rem, 4.6vw, 3.75rem); }
 .sum__list { max-height: none; }
@@ -554,6 +640,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
       <a href="#overview">Visão geral</a>
       <a href="#foundation">Implantação</a>
       <a href="#website">Site</a>
+      <a href="#pratica">Na prática</a>
       <a href="#growth">Gestão</a>
       <a href="#ecosystem">Estoque</a>
       <a href="#roadmap">Cronograma</a>
@@ -693,6 +780,21 @@ button { font: inherit; color: inherit; cursor: pointer; }
           <div class="admin__body" id="admBody" role="tabpanel"></div>
           <p class="admin__note">Dados ilustrativos para demonstração.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NA PRÁTICA: SEO, AEO E GEO -->
+  <section class="section t-dark texture" id="pratica">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">SEO, AEO e GEO na prática</p>
+        <h2>Onde a Na Pele precisa aparecer, <span class="hl">e hoje não aparece</span></h2>
+        <p class="lead muted">Fizemos pesquisas reais no Google como uma cliente de Nova Friburgo faria. À esquerda, o que aparece hoje. À direita, uma simulação de como a Na Pele pode aparecer com o plano.</p>
+      </div>
+      <div class="rv">
+        <div class="prat__tabs" role="tablist" aria-label="Exemplos" id="pratTabs"></div>
+        <div id="pratBody" role="tabpanel" aria-live="polite"></div>
       </div>
     </div>
   </section>
@@ -862,6 +964,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
     sync: '<path d="M4 12a8 8 0 0 1 14-5l2 2M20 12a8 8 0 0 1-14 5l-2-2"/><path d="M20 4v5h-5M4 20v-5h5"/>',
     card: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/>',
     coin: '<circle cx="12" cy="12" r="9"/><path d="M15 9.5a3 3 0 0 0-3-1.5c-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.6 0 1.3-1.3 2.2-3 2.2a3.3 3.3 0 0 1-3.2-1.7M12 6v2M12 16v2"/>',
+    bot: '<rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/>',
     server: '<rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/>'
   }
   const svg = (k, sw = 2) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[k]}</svg>`
@@ -1060,6 +1163,75 @@ button { font: inherit; color: inherit; cursor: pointer; }
     typeT = setInterval(() => { el.textContent = txt.slice(0, ++i); if (i >= txt.length) clearInterval(typeT) }, 45)
   }
 
+  // ---------- Na prática: SEO, AEO e GEO ----------
+  const NP_THUMB = '<span class="g__thumb">NP</span>'
+  const PRAT = [
+    { ico: 'pin', tag: 'Loja física', t: 'Google Maps',
+      q: 'quais as melhores lojas de lingerie em nova friburgo?',
+      why: 'Quem pesquisa isso está pronta para comprar e quer ir até a loja. Os três primeiros do mapa ficam com a maior parte das visitas, ligações e rotas.',
+      hoje: 'assets/hoje-maps.webp', hojeAlt: 'Busca real no Google: lojas de lingerie em Nova Friburgo, sem a Na Pele',
+      novo: `<div class="g"><div class="g__search">${svg('search')}quais as melhores lojas de lingerie em nova friburgo?</div>
+        <p class="g__h">Locais</p>
+        <div class="g__local"><span class="g__pin">NA PELE</span>${NP_THUMB}<div>
+          <div class="g__name">Na Pele Lingerie</div>
+          <div><span class="g__stars">★★★★★</span> <span class="g__muted">· Loja de lingerie · Loja de fábrica</span></div>
+          <div class="g__muted">R. Ana Barbosa Moreira, 622 · Loja 2 · Ponte da Saudade</div>
+          <div class="g__quote">Peças produzidas em Nova Friburgo · compre na loja ou pelo site</div>
+          <div class="g__btns"><span>Site</span><span>Rotas</span><span>WhatsApp</span></div>
+        </div></div>
+        <div class="g__local"><span class="g__thumb" style="background:#3c4043"></span><div><div class="g__name">Outras lojas da região</div><div class="g__muted">Loja de lingerie</div></div></div>
+      </div>`,
+      how: ['Perfil do Google Meu Negócio completo: categorias, fotos da loja, produtos e link para o site', 'Postagens recorrentes e resposta a todas as avaliações', 'Estratégia para as clientes da loja deixarem avaliações'] },
+    { ico: 'bot', tag: 'GEO', t: 'Modo IA do Google',
+      q: 'quais as melhores lojas de lingerie em nova friburgo?',
+      why: 'A IA do Google, o ChatGPT e o Gemini já respondem com uma lista de lojas. Hoje a resposta cita concorrentes; a Na Pele não é mencionada.',
+      hoje: 'assets/hoje-ia.webp', hojeAlt: 'Resposta real do Modo IA do Google listando lojas concorrentes',
+      novo: `<div class="g"><div class="g__ai">${svg('bot')}Modo IA</div><div class="g__ans"><h5>As lojas de destaque</h5><ul>
+          <li class="hl"><b>Na Pele Lingerie</b> (<a>napelelingerie.com.br</a>): loja de fábrica na Ponte da Saudade, com calcinhas, conjuntos, bodies e linha sexy. As peças são produzidas em Nova Friburgo e também vendidas pelo site, com 10% de desconto no PIX e envio para todo o Brasil.<br><span class="g__src"><i></i>napelelingerie.com.br</span></li>
+          <li><b>Outras lojas da região</b>: marcas tradicionais nos polos de Olaria e da Ponte da Saudade…</li>
+        </ul></div></div>`,
+      how: ['Site com dados estruturados da loja, dos produtos e das perguntas frequentes', 'Arquivo llms.txt com os fatos da marca para as IAs lerem', 'Menções consistentes no Google, no Instagram e em sites da região'] },
+    { ico: 'bag', tag: 'SEO', t: 'Google Shopping',
+      q: 'quais as melhores lojas de lingerie em nova friburgo?',
+      why: 'Antes até dos resultados comuns, o Google mostra produtos com foto, preço e frete. Hoje esse espaço é de grandes marcas de fora da cidade.',
+      hoje: 'assets/hoje-shopping.webp', hojeAlt: 'Busca real no Google mostrando produtos de outras lojas',
+      novo: `<div class="g"><div class="g__search">${svg('search')}conjunto de lingerie renda</div><p class="g__h">Produtos</p><div class="g__shop">
+          <div class="g__card"><img src="assets/p-conjunto.webp" alt="Conjunto Basic Renda" loading="lazy"><div><b>Conjunto Basic Renda</b><div class="g__price">R$ 15,90<s>R$ 29,90</s></div><div class="g__store"><i></i>Na Pele Lingerie</div><div class="g__ship">10% off no PIX</div></div></div>
+          <div class="g__card"><img src="assets/p-body.webp" alt="Body Penélope em renda" loading="lazy"><div><b>Body Penélope em Renda com Cinta Liga</b><div class="g__price">R$ 23,90<s>R$ 39,90</s></div><div class="g__store"><i></i>Na Pele Lingerie</div><div class="g__ship">10% off no PIX</div></div></div>
+          <div class="g__card"><img src="assets/p-camisola.webp" alt="Camisola Renata" loading="lazy"><div><b>Camisola Renata</b><div class="g__price">R$ 23,90<s>R$ 35,90</s></div><div class="g__store"><i></i>Na Pele Lingerie</div><div class="g__ship">10% off no PIX</div></div></div>
+        </div></div>`,
+      how: ['Catálogo enviado automaticamente do site para o Google Merchant Center', 'Fotos, preços e estoque sempre atualizados', 'Campanhas de Shopping para os produtos mais vendidos'] },
+    { ico: 'search', tag: 'AEO', t: 'Resposta direta',
+      q: 'qual a diferença entre calcinha fio dental e fio duplo?',
+      why: 'Muitas buscas são perguntas. O Google destaca uma resposta curta no topo e o site citado ganha a visita e a confiança de quem está escolhendo o que comprar.',
+      hoje: '', hojeAlt: '',
+      novo: `<div class="g"><div class="g__search">${svg('search')}qual a diferença entre calcinha fio dental e fio duplo?</div><div class="g__snip">
+          <p>A fio dental tem uma tira fina atrás. A <b>fio duplo tem duas tiras finas</b>, o que valoriza o bumbum e deixa a peça mais estável no corpo.</p>
+          <div class="g__url"><i>NP</i><span>Na Pele Lingerie<br>napelelingerie.com.br › lingerie › calcinhas</span></div>
+          <div class="g__link">Calcinhas e tangas femininas | Na Pele Lingerie</div>
+        </div>
+        <div class="g__paa"><div><span>As calcinhas têm forro?</span><span>⌄</span></div><div><span>Posso devolver se não servir?</span><span>⌄</span></div><div><span>Onde a lingerie é fabricada?</span><span>⌄</span></div></div></div>`,
+      how: ['Perguntas e respostas diretas em cada categoria e produto', 'Marcação FAQ para o Google identificar as respostas', 'Artigos no blog respondendo as dúvidas mais buscadas'] }
+  ]
+  let pratI = 0
+  function renderPrat() {
+    $('#pratTabs').innerHTML = PRAT.map((p, k) => `<button type="button" class="prat__tab" role="tab" aria-selected="${k === pratI}" data-k="${k}">${svg(p.ico)}${p.t}<small>${p.tag}</small></button>`).join('')
+    $$('#pratTabs .prat__tab').forEach(b => b.onclick = () => { pratI = +b.dataset.k; renderPrat() })
+    const p = PRAT[pratI]
+    const hoje = p.hoje
+      ? `<img src="${p.hoje}" alt="${p.hojeAlt}" loading="lazy">`
+      : `<div class="prat__empty"><div><b>A resposta vem de outros sites</b>Sem conteúdo de perguntas e respostas, o Google cita portais e concorrentes. A Na Pele não aparece.</div></div>`
+    $('#pratBody').innerHTML = `<div class="panel-anim">
+      <div class="prat__intro"><p class="prat__q">${svg('search')}“${p.q}”</p><p class="prat__why">${p.why}</p></div>
+      <div class="prat__cmp">
+        <div class="prat__col prat__col--hoje"><div class="prat__lbl"><span>Hoje · pesquisa real</span><span>Na Pele não aparece</span></div>${hoje}</div>
+        <div class="prat__col prat__col--novo"><div class="prat__lbl"><span>Com o plano</span><em>simulação</em></div>${p.novo}</div>
+      </div>
+      <ul class="prat__how">${p.how.map(x => `<li>${svg('check', 2.6)}<span>${x}</span></li>`).join('')}</ul>
+      <p class="prat__note">Pesquisas feitas no Google em 18/10/2026, a partir de Nova Friburgo. As simulações são ilustrativas: a posição nos resultados depende do Google e das IAs, e é construída com o trabalho contínuo de SEO, AEO, GEO e Google Meu Negócio.</p>
+    </div>`
+  }
+
   // ---------- Fase 2 ----------
   function renderP2() {
     $('#svc').innerHTML = P2.map((c, k) => `<article class="scard rv is-in"><div class="scard__top"><span class="scard__ico">${svg(c.ico)}</span><span class="scard__n">0${k + 1}</span></div>
@@ -1126,7 +1298,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
     const t = $('#toast'); $('span', t).textContent = 'Resumo do plano copiado'; t.classList.add('is-on'); setTimeout(() => t.classList.remove('is-on'), 2200)
   })
 
-  renderOverview(); renderP1(false); renderSite(); renderAdmin(); renderP2(); renderWeek(); renderEco(); renderRoad(); renderPlan()
+  renderOverview(); renderP1(false); renderSite(); renderAdmin(); renderPrat(); renderP2(); renderWeek(); renderEco(); renderRoad(); renderPlan()
 
   // ---------- Revelação, contadores, progresso e menu ativo ----------
   const io = new IntersectionObserver((es) => es.forEach(e => {
